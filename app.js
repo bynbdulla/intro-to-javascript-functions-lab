@@ -127,5 +127,9 @@ console.log('Exercise 10 Result:', calculateGrade(85));
 
 //EXERCISE 11
 function createUsername(fName , lName){
-
+    let firstN = fName.substring(0,3)
+    let lastN = lName.substring(0,3)
+    let tLength = fName.length + lName.length
+    return firstN + lastN + tLength
 }
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
